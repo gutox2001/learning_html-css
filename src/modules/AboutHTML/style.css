@@ -1,0 +1,15 @@
+.logo_html {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_logo_html {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
