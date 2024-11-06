@@ -5,7 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CSS</title>
 
-		<link rel="stylesheet" href="../../../style.css" />
+		<link rel="stylesheet" href="../../../styles/general-style.css" />
+		<link rel="stylesheet" href="../../../styles/header-style.css" />
+		<link rel="stylesheet" href="../../../styles/footer-style.css" />
+		<link rel="stylesheet" href="../../../styles/table-style.css" />
+		<link rel="stylesheet" href="../../../styles/list-style.css" />
+
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
@@ -36,7 +41,7 @@
 			</nav>
 		</header>
 		<main>
-			<div class="intro">
+			<section class="intro">
 				<h2>Introdução</h2>
 
 				<h3>Como funciona?</h3>
@@ -53,182 +58,568 @@
 						alt="Formato de uma declaração CSS"
 					/>
 				</p>
-			</div>
-			<div class="table-container">
+			</section>
+			<div class="separator"></div>
+			<section>
 				<h2>Principais Propriedades de Estilização CSS</h2>
-				<table>
-					<thead>
-						<tr>
-							<th>Propriedade CSS</th>
-							<th>Descrição</th>
-							<th>Exemplo de Estilização</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>color</code></td>
-							<td>
-								Define a cor do texto. Pode ser usado com
-								valores como nomes de cores, códigos
-								hexadecimais, RGB e HSL.
-							</td>
-							<td>
-								<code>color: #3498db;</code>
-								<br />
-								<code>color: rgb(52, 152, 219);</code>
-								<br />
-								<code>color: hsl(207, 70%, 53%);</code>
-							</td>
-						</tr>
-						<tr>
-							<td><code>background-color</code></td>
-							<td>
-								Define a cor de fundo de um elemento, que pode
-								cobrir todo o conteúdo ou apenas uma parte
-								específica dependendo de outras propriedades.
-							</td>
-							<td>
-								<code>background-color: #f9f9f9;</code>
-								<br />
-								<code>
-									background-color: rgba(0, 0, 0, 0.1);
-								</code>
-							</td>
-						</tr>
-						<tr>
-							<td><code>font-size</code></td>
-							<td>
-								Define o tamanho do texto. Pode ser definido em
-								unidades relativas (como em ou %) ou absolutas
-								(como px).
-							</td>
-							<td>
-								<code>font-size: 16px;</code>
-								<br />
-								<code>font-size: 1.2em;</code>
-								<br />
-								<code>font-size: 150%;</code>
-							</td>
-						</tr>
-						<tr>
-							<td><code>padding</code></td>
-							<td>
-								Define o espaço interno ao redor do conteúdo de
-								um elemento, afetando a distância entre o
-								conteúdo e as bordas do elemento.
-							</td>
-							<td>
-								<code>padding: 10px;</code>
-								<br />
-								<code>padding: 10px 20px;</code>
-								<br />
-								<code>padding: 5px 10px 15px 20px;</code>
-							</td>
-						</tr>
-						<tr>
-							<td><code>margin</code></td>
-							<td>
-								Define o espaço externo ao redor de um elemento,
-								afetando a distância entre o elemento e seus
-								vizinhos.
-							</td>
-							<td>
-								<code>margin: 15px;</code>
-								<br />
-								<code>margin: 10px 20px;</code>
-								<br />
-								<code>margin: 5px 10px 15px 20px;</code>
-							</td>
-						</tr>
-						<tr>
-							<td><code>border-radius</code></td>
-							<td>
-								Arredonda as bordas de um elemento. Pode ser
-								usado para círculos ou formas ovais.
-							</td>
-							<td>
-								<code>border-radius: 8px;</code>
-								<br />
-								<code>border-radius: 50%;</code>
-								(círculo)
-							</td>
-						</tr>
-						<tr>
-							<td><code>box-shadow</code></td>
-							<td>
-								Adiciona uma sombra ao redor de um elemento. Os
-								valores definem a posição horizontal, vertical,
-								desfoque, extensão e cor da sombra.
-							</td>
-							<td>
-								<code>
-									box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-								</code>
-								<br />
-								<code>
-									box-shadow: 2px 2px 5px #ccc, -2px -2px 5px
-									#eee;
-								</code>
-								(sombra dupla)
-							</td>
-						</tr>
-						<tr>
-							<td><code>text-align</code></td>
-							<td>
-								Define o alinhamento do texto dentro de um
-								elemento.
-							</td>
-							<td>
-								<code>text-align: center;</code>
-								<br />
-								<code>text-align: right;</code>
-								<br />
-								<code>text-align: justify;</code>
-							</td>
-						</tr>
-						<tr>
-							<td><code>display</code></td>
-							<td>
-								Determina como um elemento será exibido no
-								layout, como block, inline, flex, ou grid.
-							</td>
-							<td>
-								<code>display: block;</code>
-								<br />
-								<code>display: inline;</code>
-								<br />
-								<code>display: flex;</code>
-							</td>
-						</tr>
-						<tr>
-							<td><code>position</code></td>
-							<td>
-								Define o método de posicionamento de um elemento
-								na página, como relativo, absoluto ou fixo.
-							</td>
-							<td>
-								<code>position: relative;</code>
-								<br />
-								<code>position: absolute;</code>
-								<br />
-								<code>position: fixed;</code>
-							</td>
-						</tr>
-						<tr>
-							<td><code>flex</code></td>
-							<td>
-								Configura elementos flexíveis para uso em
-								layouts flexbox.
-							</td>
-							<td>
-								<code>flex: 1;</code>
-								<br />
-								<code>flex: 2 1 0;</code>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+				<p>
+					Existem várias propriedades de estilização disponíveis no
+					CSS que podem ser usadas para alterar a aparência de um
+					elemento na página. Abaixo estão listadas algumas das
+					principais propriedades de estilização do CSS.
+				</p>
+				<div class="table-container">
+					<table>
+						<thead>
+							<tr>
+								<th>Propriedade CSS</th>
+								<th>Descrição</th>
+								<th>Exemplo de Estilização</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><code>color</code></td>
+								<td>
+									Define a cor do texto. Pode ser usado com
+									valores como nomes de cores, códigos
+									hexadecimais, RGB e HSL.
+								</td>
+								<td>
+									<code>color: #3498db;</code>
+									<br />
+									<code>color: rgb(52, 152, 219);</code>
+									<br />
+									<code>color: hsl(207, 70%, 53%);</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>background-color</code></td>
+								<td>
+									Define a cor de fundo de um elemento, que
+									pode cobrir todo o conteúdo ou apenas uma
+									parte específica dependendo de outras
+									propriedades.
+								</td>
+								<td>
+									<code>background-color: #f9f9f9;</code>
+									<br />
+									<code>
+										background-color: rgba(0, 0, 0, 0.1);
+									</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>font-size</code></td>
+								<td>
+									Define o tamanho do texto. Pode ser definido
+									em unidades relativas (como em ou %) ou
+									absolutas (como px).
+								</td>
+								<td>
+									<code>font-size: 16px;</code>
+									<br />
+									<code>font-size: 1.2em;</code>
+									<br />
+									<code>font-size: 150%;</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>padding</code></td>
+								<td>
+									Define o espaço interno ao redor do conteúdo
+									de um elemento, afetando a distância entre o
+									conteúdo e as bordas do elemento.
+								</td>
+								<td>
+									<code>padding: 10px;</code>
+									<br />
+									<code>padding: 10px 20px;</code>
+									<br />
+									<code>padding: 5px 10px 15px 20px;</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>margin</code></td>
+								<td>
+									Define o espaço externo ao redor de um
+									elemento, afetando a distância entre o
+									elemento e seus vizinhos.
+								</td>
+								<td>
+									<code>margin: 15px;</code>
+									<br />
+									<code>margin: 10px 20px;</code>
+									<br />
+									<code>margin: 5px 10px 15px 20px;</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>border-radius</code></td>
+								<td>
+									Arredonda as bordas de um elemento. Pode ser
+									usado para círculos ou formas ovais.
+								</td>
+								<td>
+									<code>border-radius: 8px;</code>
+									<br />
+									<code>border-radius: 50%;</code>
+									(círculo)
+								</td>
+							</tr>
+							<tr>
+								<td><code>box-shadow</code></td>
+								<td>
+									Adiciona uma sombra ao redor de um elemento.
+									Os valores definem a posição horizontal,
+									vertical, desfoque, extensão e cor da
+									sombra.
+								</td>
+								<td>
+									<code>
+										box-shadow: 0 4px 8px rgba(0, 0, 0,
+										0.2);
+									</code>
+									<br />
+									<code>
+										box-shadow: 2px 2px 5px #ccc, -2px -2px
+										5px #eee;
+									</code>
+									(sombra dupla)
+								</td>
+							</tr>
+							<tr>
+								<td><code>text-align</code></td>
+								<td>
+									Define o alinhamento do texto dentro de um
+									elemento.
+								</td>
+								<td>
+									<code>text-align: center;</code>
+									<br />
+									<code>text-align: right;</code>
+									<br />
+									<code>text-align: justify;</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>display</code></td>
+								<td>
+									Determina como um elemento será exibido no
+									layout, como block, inline, flex, ou grid.
+								</td>
+								<td>
+									<code>display: block;</code>
+									<br />
+									<code>display: inline;</code>
+									<br />
+									<code>display: flex;</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>position</code></td>
+								<td>
+									Define o método de posicionamento de um
+									elemento na página, como relativo, absoluto
+									ou fixo.
+								</td>
+								<td>
+									<code>position: relative;</code>
+									<br />
+									<code>position: absolute;</code>
+									<br />
+									<code>position: fixed;</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>flex</code></td>
+								<td>
+									Configura elementos flexíveis para uso em
+									layouts flexbox.
+								</td>
+								<td>
+									<code>flex: 1;</code>
+									<br />
+									<code>flex: 2 1 0;</code>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<div class="separator"></div>
+			<section>
+				<h2>Seletores</h2>
+				<p>
+					Os seletores são usados para identificar os elementos a
+					serem selecionados e estilizados. Existem vários tipos de
+					seletores que podem ser usados para selecionar elementos com
+					base em seu tipo, classe, ID, atributos, estado e muito
+					mais.
+				</p>
+				<div class="table-container">
+					<table>
+						<thead>
+							<tr>
+								<th>Seletor</th>
+								<th>Descrição</th>
+								<th>Exemplo</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><code>*</code></td>
+								<td>Seleciona todos os elementos da página.</td>
+								<td>
+									<code>* { color: red; }</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>elemento</code></td>
+								<td>
+									Seleciona todos os elementos com o nome do
+									elemento especificado.
+								</td>
+								<td>
+									<code>p { font-size: 16px; }</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>.classe</code></td>
+								<td>
+									Seleciona todos os elementos com a classe
+									especificada.
+								</td>
+								<td>
+									<code>.destaque { color: yellow; }</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>#id</code></td>
+								<td>
+									Seleciona o elemento com o ID especificado.
+								</td>
+								<td>
+									<code>
+										#principal { font-weight: bold; }
+									</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>elemento, elemento</code></td>
+								<td>
+									Seleciona todos os elementos que
+									correspondem a qualquer um dos seletores
+									especificados.
+								</td>
+								<td>
+									<code>h1, h2 { color: blue; }</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>elemento elemento</code></td>
+								<td>
+									Seleciona um elemento filho de outro
+									elemento.
+								</td>
+								<td>
+									<code>div p { margin: 10px; }</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>elemento > elemento</code></td>
+								<td>
+									Seleciona um elemento filho direto de outro
+									elemento.
+								</td>
+								<td>
+									<code>div > p { padding: 5px; }</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>elemento + elemento</code></td>
+								<td>
+									Seleciona o elemento irmão imediatamente
+									posterior a outro elemento.
+								</td>
+								<td>
+									<code>p + p { margin-top: 20px; }</code>
+								</td>
+							</tr>
+							<tr>
+								<td><code>elemento ~ elemento</code></td>
+								<td>
+									Seleciona todos os elementos irmãos
+									posteriores a outro elemento.
+								</td>
+								<td>
+									<code>p ~ p { margin-top: 20px; }</code>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<div class="separator"></div>
+			<section>
+				<h2>Cores</h2>
+				<p>
+					No CSS as cores podem ser definidas de várias maneiras. As
+					cores podem ser especificadas por nome, código hexadecimal,
+					RGB, RGBA, HSL e HSLA. Dentre as opções disponíveis as mais
+					comuns são as cores por nome e código hexadecimal. É
+					possível definir as cores de vários elementos da página,
+					como texto, fundo, bordas, sombras, entre outros. Abaixo
+					serão apresentadas as diferentes formas de definir cores no
+					CSS.
+				</p>
+				<div class="table-container">
+					<table>
+						<thead>
+							<tr>
+								<th>Forma de Definição</th>
+								<th>Descrição</th>
+								<th>Exemplo</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Nome</td>
+								<td>Define a cor por um nome específico.</td>
+								<td>
+									<code>color: red;</code>
+									<br />
+									<code>background-color: blue;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Código Hexadecimal</td>
+								<td>
+									Define a cor por um código hexadecimal de 6
+									dígitos.
+								</td>
+								<td>
+									<code>color: #3498db;</code>
+									<br />
+									<code>background-color: #f9f9f9;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>RGB</td>
+								<td>
+									Define a cor por valores de vermelho, verde
+									e azul.
+								</td>
+								<td>
+									<code>color: rgb(52, 152, 219);</code>
+									<br />
+									<code>
+										background-color: rgb(249, 249, 249);
+									</code>
+								</td>
+							</tr>
+							<tr>
+								<td>RGBA</td>
+								<td>
+									Define a cor por valores de vermelho, verde,
+									azul e transparência.
+								</td>
+								<td>
+									<code>color: rgba(52, 152, 219, 0.8);</code>
+									<br />
+									<code>
+										background-color: rgba(0, 0, 0, 0.1);
+									</code>
+								</td>
+							</tr>
+							<tr>
+								<td>HSL</td>
+								<td>
+									Define a cor por valores de matiz, saturação
+									e luminosidade.
+								</td>
+								<td>
+									<code>color: hsl(207, 70%, 53%);</code>
+									<br />
+									<code>
+										background-color: hsl(0, 0%, 98%);
+									</code>
+								</td>
+							</tr>
+							<tr>
+								<td>HSLA</td>
+								<td>
+									Define a cor por valores de matiz,
+									saturação, luminosidade e transparência.
+								</td>
+								<td>
+									<code>
+										color: hsla(207, 70%, 53%, 0.8);
+									</code>
+									<br />
+									<code>
+										background-color: hsla(0, 0%, 0%, 0.1);
+									</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Palavras-chave</td>
+								<td>
+									Define a cor por palavras-chave como
+									transparent, currentColor, inherit, initial,
+									revert e unset.
+								</td>
+								<td>
+									<code>color: transparent;</code>
+									<br />
+									<code>color: currentColor;</code>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<div class="separator"></div>
+			<section>
+				<h2>
+					Box Model
+				</h2>
+				<p>
+					O Box Model é um conceito fundamental do CSS que define a
+					estrutura de um elemento na página. Cada elemento é
+					representado por uma caixa retangular que consiste em
+					conteúdo, preenchimento, borda e margem. O conteúdo é a
+					área onde o texto e outros elementos são exibidos. O
+					preenchimento é a área entre o conteúdo e a borda. A borda é
+					a área ao redor do elemento. A margem é a área entre o
+					elemento e seus vizinhos. Na tabela abaixo é possível visualizar os valores que podem ser aplicados a cada parte do Box Model.
+				</p>
+				<div class="table-container">
+					<table>
+						<thead>
+							<tr>
+								<th>Parte</th>
+								<th>Descrição</th>
+								<th>Exemplo</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Conteúdo</td>
+								<td>
+									Área onde o texto e outros elementos são
+									exibidos.
+								</td>
+								<td>
+									<code>width: 200px;</code>
+									<br />
+									<code>height: 100px;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Preenchimento</td>
+								<td>
+									Área entre o conteúdo e a borda.
+								</td>
+								<td>
+									<code>padding: 10px;</code>
+									<br />
+									<code>padding: 10px 20px;</code>
+									<br />
+									<code>padding: 5px 10px 15px 20px;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Borda</td>
+								<td>
+									Área ao redor do elemento.
+								</td>
+								<td>
+									<code>border: 1px solid #ccc;</code>
+									<br />
+									<code>border-radius: 8px;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Margem</td>
+								<td>
+									Área entre o elemento e seus vizinhos.
+								</td>
+								<td>
+									<code>margin: 15px;</code>
+									<br />
+									<code>margin: 10px 20px;</code>
+									<br />
+									<code>margin: 5px 10px 15px 20px;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Box Sizing</td>
+								<td>
+									Define como o tamanho total de um elemento é
+									calculado.
+								</td>
+								<td>
+									<code>box-sizing: content-box;</code>
+									<br />
+									<code>box-sizing: border-box;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Overflow</td>
+								<td>
+									Define o comportamento do conteúdo que
+									transborda a caixa do elemento.
+								</td>
+								<td>
+									<code>overflow: hidden;</code>
+									<br />
+									<code>overflow: scroll;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Visibility</td>
+								<td>
+									Define a visibilidade de um elemento.
+								</td>
+								<td>
+									<code>visibility: visible;</code>
+									<br />
+									<code>visibility: hidden;</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Clip Path</td>
+								<td>
+									Define uma área de recorte para um elemento.
+								</td>
+								<td>
+									<code>clip-path: circle(50%);</code>
+									<br />
+									<code>clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);</code>
+								</td>
+							</tr>
+							<tr>
+								<td>Outline</td>
+								<td>
+									Define uma linha ao redor de um elemento.
+								</td>
+								<td>
+									<code>outline: 2px solid red;</code>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="img-div">
+					<h4 class="img-title">
+						Ilustração do Box Model
+					</h4>
+					<img id="" src="/src/assets/images/css_images/box-model.png" alt="Ilustração sobre como funciona o box-model.">
+					<p class="caption">Essa imagem corresponde a uma ilustração de como funciona um box-model na prática.</p>
+				</div>
+			</section>
+			<!-- <div class="separator"></div> -->
 		</main>
 		<footer></footer>
 	</body>

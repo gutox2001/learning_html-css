@@ -1,0 +1,9 @@
+/* Estiliza o rodapé */
+footer {
+	min-height: 70px; /* Define a altura mínima */
+	padding: 20px; /* Adiciona padding */
+	margin-top: 20px; /* Adiciona margem no topo */
+	color: #ffffff; /* Define a cor do texto */
+	background-color: #35424a; /* Define a cor de fundo */
+	text-align: center; /* Centraliza o texto */
+}

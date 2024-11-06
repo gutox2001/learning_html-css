@@ -1,0 +1,6 @@
+ul {
+	margin: 20px 0; /* Adiciona margem no topo e na parte inferior */
+	text-align: start;
+	padding-left: 40px; /* Adiciona padding à esquerda */
+	list-style-type: disc; /* Define o estilo de lista como disco */
+}

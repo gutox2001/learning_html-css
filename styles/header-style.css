@@ -1,0 +1,79 @@
+/* Estiliza o cabeçalho */
+header {
+	background: #35424a; /* Define a cor de fundo */
+	color: #ffffff; /* Define a cor do texto */
+	min-height: 70px; /* Define a altura mínima */
+	border-bottom: #e8491d 3px solid; /* Adiciona uma borda inferior */
+	height: auto; /* Define a altura automaticamente para caber os conteúdos */
+}
+
+/* Estiliza os links no cabeçalho */
+header a {
+	color: #ffffff; /* Define a cor do link */
+	text-decoration: none; /* Remove o sublinhado dos links */
+	text-transform: uppercase; /* Transforma o texto em maiúsculas */
+	font-size: 16px; /* Define o tamanho da fonte */
+}
+
+/* Remove o padding e o estilo de lista do ul no cabeçalho */
+header ul {
+	padding: 0; /* Remove o padding */
+	list-style: none; /* Remove o estilo de lista */
+}
+
+/* Estiliza os itens da lista no cabeçalho */
+header li {
+	padding: 0 20px; /* Adiciona padding à esquerda e à direita */
+}
+
+/* Estiliza a seção de branding no cabeçalho */
+header #branding {
+	float: left; /* Flutua para a esquerda */
+}
+
+/* Estiliza o cabeçalho de branding */
+header #branding h1 {
+	margin: 0; /* Remove a margem */
+}
+
+/* Estiliza a navegação no cabeçalho */
+header nav {
+	display: flex; /* Usa layout flexbox */
+	flex-direction: row; /* Organiza os itens em linha */
+	align-items: center; /* Centraliza os itens verticalmente */
+	justify-content: space-between; /* Espaço entre os itens */
+
+	width: 100%; /* Define a largura */
+	height: auto; /* Define a altura */
+}
+
+header div {
+	display: flex; /* Usa layout flexbox */
+	flex-direction: row; /* Organiza os itens em linha */
+	align-items: center; /* Centraliza os itens verticalmente */
+	justify-content: space-between; /* Espaço entre os itens */
+	margin: 0 20px 0 40px; /* Adiciona margem à esquerda e à direita */
+}
+
+/* Estiliza o logo */
+header .logo {
+	width: 50px; /* Define a largura do logo */
+	height: 50px; /* Define a altura do logo */
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgb(58, 56, 56);
+	margin: 20px 20px 20px 20px;
+}
+
+/* Destaca links atuais ou destacados no cabeçalho */
+header .highlight,
+header .current a {
+	color: #e8491d; /* Define a cor de destaque */
+	font-weight: bold; /* Define o texto em negrito */
+}
+
+/* Altera a cor do link e o tamanho ao passar o mouse */
+header a:hover {
+	color: #cccccc; /* Define a cor ao passar o mouse */
+	transform: scale(1.2); /* Aumenta o tamanho em 10% */
+	transition: transform 0.5s ease; /* Adiciona uma transição suave */
+}
