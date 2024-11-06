@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML</title>
+
+		<link rel="stylesheet" href="../../../style.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div>
+					<a href="../../../index.html">Home</a>
+				</div>
+				<div>
+					<a href="../about-html/index.html">
+						<img
+							class="logo"
+							src="../../assets/images/logo-html-1200x1200.png"
+							alt="HTML Logo"
+							style="width: 50px; height: 50px"
+						/>
+					</a>
+					<a href="../about-css/index.html">
+						<img
+							class="logo"
+							src="../../assets/images/logo-css-288x288.png"
+							alt="CSS Logo"
+							style="width: 50px; height: 50px"
+						/>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="intro">
+				<h2>Introdução</h2>
+
+				<h3>Como funciona?</h3>
+				<p class="p_intro">
+					Basicamente o HTML (HyperText Markup Language) é a linguagem padrão utilizada para criar e estruturar páginas na web. Ele funciona através de uma série de elementos, que são representados por tags. Essas tags indicam ao navegador como o conteúdo deve ser exibido. Por exemplo, a tag P define um parágrafo, a tag H1 define um título de nível 1, e assim por diante. Além disso, o HTML permite a inclusão de links, imagens, vídeos e outros tipos de mídia, tornando as páginas web interativas e dinâmicas.
+
+					<img
+						class="img_format_1"
+						src="../../assets/images/html_images/html_tag_format.png"
+						alt="Formato de uma tag HTML"
+					/>
+				</p>
+			</div>
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th>Tag HTML</th>
+							<th>Descrição</th>
+							<th>Exemplo de Uso</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>&lt;a&gt;</code></td>
+							<td>
+								Define um hyperlink que pode ser usado para navegar para outra página ou recurso.
+							</td>
+							<td>
+								<code>&lt;a href="https://www.exemplo.com"&gt;Visite o Exemplo&lt;/a&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;p&gt;</code></td>
+							<td>
+								Define um parágrafo de texto.
+							</td>
+							<td>
+								<code>&lt;p&gt;Este é um parágrafo.&lt;/p&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;div&gt;</code></td>
+							<td>
+								Define uma divisão ou seção em um documento, usada para agrupar elementos.
+							</td>
+							<td>
+								<code>&lt;div&gt;Conteúdo da div&lt;/div&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;h1&gt; a &lt;h6&gt;</code></td>
+							<td>
+								Define cabeçalhos de diferentes níveis, com &lt;h1&gt; sendo o mais importante.
+							</td>
+							<td>
+								<code>&lt;h1&gt;Título Principal&lt;/h1&gt;</code><br />
+								<code>&lt;h2&gt;Subtítulo&lt;/h2&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;img&gt;</code></td>
+							<td>
+								Insere uma imagem na página.
+							</td>
+							<td>
+								<code>&lt;img src="imagem.jpg" alt="Descrição da Imagem"&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;ul&gt; / &lt;ol&gt;</code></td>
+							<td>
+								Define uma lista não ordenada (&lt;ul&gt;) ou ordenada (&lt;ol&gt;).
+							</td>
+							<td>
+								<code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</code><br />
+								<code>&lt;ol&gt;&lt;li&gt;Primeiro&lt;/li&gt;&lt;li&gt;Segundo&lt;/li&gt;&lt;/ol&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;form&gt;</code></td>
+							<td>
+								Cria um formulário para coletar dados do usuário.
+							</td>
+							<td>
+								<code>&lt;form action="/enviar"&gt;&lt;input type="text" name="nome"&gt;&lt;/form&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;input&gt;</code></td>
+							<td>
+								Define um campo de entrada de dados em um formulário.
+							</td>
+							<td>
+								<code>&lt;input type="text" placeholder="Digite seu nome"&gt;</code><br />
+								<code>&lt;input type="checkbox"&gt; Aceito os termos</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;button&gt;</code></td>
+							<td>
+								Define um botão que pode ser clicado para realizar uma ação.
+							</td>
+							<td>
+								<code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;span&gt;</code></td>
+							<td>
+								Define um contêiner em linha que pode ser estilizado sem quebrar o fluxo do texto.
+							</td>
+							<td>
+								<code>&lt;span style="color: red"&gt;Texto em vermelho&lt;/span&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;strong&gt;</code></td>
+							<td>
+								Define texto importante, geralmente renderizado em negrito.
+							</td>
+							<td>
+								<code>&lt;strong&gt;Texto em negrito&lt;/strong&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;em&gt;</code></td>
+							<td>
+								Define texto enfatizado, geralmente renderizado em itálico.
+							</td>
+							<td>
+								<code>&lt;em&gt;Texto em itálico&lt;/em&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;br&gt;</code></td>
+							<td>
+								Insere uma quebra de linha no texto.
+							</td>
+							<td>
+								<code>&lt;p&gt;Linha 1&lt;br&gt;Linha 2&lt;/p&gt;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;blockquote&gt;</code></td>
+							<td>
+								Define uma citação longa ou uma citação de um autor.
+							</td>
+							<td>
+								<code>&lt;blockquote&gt;Citação aqui.&lt;/blockquote&gt;</code>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</main>
+		<footer></footer>
+	</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS</title>
+
+		<link rel="stylesheet" href="../../../style.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div>
+					<a href="../../../index.html">Home</a>
+				</div>
+				<div>
+					<a href="../about-html/index.html">
+						<img
+							class="logo"
+							src="../../assets/images/logo-html-1200x1200.png"
+							alt="HTML Logo"
+							style="width: 50px; height: 50px"
+						/>
+					</a>
+					<a href="../about-css/index.html">
+						<img
+							class="logo"
+							src="../../assets/images/logo-css-288x288.png"
+							alt="CSS Logo"
+							style="width: 50px; height: 50px"
+						/>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="intro">
+				<h2>Introdução</h2>
+
+				<h3>Como funciona?</h3>
+				<p class="p_intro">
+					Basicamente o CSS é composto de seletores e declarações. Os
+					seletores são usados para identificar os elementos a serem
+					selecionados e estilizados. As declarações são usadas para
+					definir as propriedades de estilização que serão aplicadas
+					aos elementos selecionados.
+
+					<img
+						class="img_format_1"
+						src="../../assets/images/css_images/formato-css.png"
+						alt="Formato de uma declaração CSS"
+					/>
+				</p>
+			</div>
+			<div class="table-container">
+				<h2>Principais Propriedades de Estilização CSS</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Propriedade CSS</th>
+							<th>Descrição</th>
+							<th>Exemplo de Estilização</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>color</code></td>
+							<td>
+								Define a cor do texto. Pode ser usado com
+								valores como nomes de cores, códigos
+								hexadecimais, RGB e HSL.
+							</td>
+							<td>
+								<code>color: #3498db;</code>
+								<br />
+								<code>color: rgb(52, 152, 219);</code>
+								<br />
+								<code>color: hsl(207, 70%, 53%);</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>background-color</code></td>
+							<td>
+								Define a cor de fundo de um elemento, que pode
+								cobrir todo o conteúdo ou apenas uma parte
+								específica dependendo de outras propriedades.
+							</td>
+							<td>
+								<code>background-color: #f9f9f9;</code>
+								<br />
+								<code>
+									background-color: rgba(0, 0, 0, 0.1);
+								</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>font-size</code></td>
+							<td>
+								Define o tamanho do texto. Pode ser definido em
+								unidades relativas (como em ou %) ou absolutas
+								(como px).
+							</td>
+							<td>
+								<code>font-size: 16px;</code>
+								<br />
+								<code>font-size: 1.2em;</code>
+								<br />
+								<code>font-size: 150%;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>padding</code></td>
+							<td>
+								Define o espaço interno ao redor do conteúdo de
+								um elemento, afetando a distância entre o
+								conteúdo e as bordas do elemento.
+							</td>
+							<td>
+								<code>padding: 10px;</code>
+								<br />
+								<code>padding: 10px 20px;</code>
+								<br />
+								<code>padding: 5px 10px 15px 20px;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>margin</code></td>
+							<td>
+								Define o espaço externo ao redor de um elemento,
+								afetando a distância entre o elemento e seus
+								vizinhos.
+							</td>
+							<td>
+								<code>margin: 15px;</code>
+								<br />
+								<code>margin: 10px 20px;</code>
+								<br />
+								<code>margin: 5px 10px 15px 20px;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>border-radius</code></td>
+							<td>
+								Arredonda as bordas de um elemento. Pode ser
+								usado para círculos ou formas ovais.
+							</td>
+							<td>
+								<code>border-radius: 8px;</code>
+								<br />
+								<code>border-radius: 50%;</code>
+								(círculo)
+							</td>
+						</tr>
+						<tr>
+							<td><code>box-shadow</code></td>
+							<td>
+								Adiciona uma sombra ao redor de um elemento. Os
+								valores definem a posição horizontal, vertical,
+								desfoque, extensão e cor da sombra.
+							</td>
+							<td>
+								<code>
+									box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+								</code>
+								<br />
+								<code>
+									box-shadow: 2px 2px 5px #ccc, -2px -2px 5px
+									#eee;
+								</code>
+								(sombra dupla)
+							</td>
+						</tr>
+						<tr>
+							<td><code>text-align</code></td>
+							<td>
+								Define o alinhamento do texto dentro de um
+								elemento.
+							</td>
+							<td>
+								<code>text-align: center;</code>
+								<br />
+								<code>text-align: right;</code>
+								<br />
+								<code>text-align: justify;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>display</code></td>
+							<td>
+								Determina como um elemento será exibido no
+								layout, como block, inline, flex, ou grid.
+							</td>
+							<td>
+								<code>display: block;</code>
+								<br />
+								<code>display: inline;</code>
+								<br />
+								<code>display: flex;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>position</code></td>
+							<td>
+								Define o método de posicionamento de um elemento
+								na página, como relativo, absoluto ou fixo.
+							</td>
+							<td>
+								<code>position: relative;</code>
+								<br />
+								<code>position: absolute;</code>
+								<br />
+								<code>position: fixed;</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>flex</code></td>
+							<td>
+								Configura elementos flexíveis para uso em
+								layouts flexbox.
+							</td>
+							<td>
+								<code>flex: 1;</code>
+								<br />
+								<code>flex: 2 1 0;</code>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+</html>
