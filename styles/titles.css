@@ -1,0 +1,28 @@
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 1em;
+    color: #e8491d;
+    margin: 0;
+    padding: 0;
+}

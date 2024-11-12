@@ -29,19 +29,27 @@ main {
     border-radius: 10px;
 
     text-align: center; /* Centraliza o texto */
+
+    border-radius: 20px;
 }
 
 p {
     display: flex; /* Usa layout flexbox */
     justify-items: center; /* Centraliza os itens horizontalmente */
     align-items: center; /* Centraliza os itens verticalmente */
-
-    text-align: center; /* Justifica o texto */
+    flex-direction: column; /* Organiza os itens em coluna */
+    
+    max-width: 900px; /* Define a largura máxima */
+    
+    text-align: justify; /* Justifica o texto */
     color: #333; /* Define a cor do texto */
     font: 20px Arial, sans-serif; /* Define a família de fontes e o tamanho da fonte */
     line-height: 1.5; /* Define o espaço entre linhas */
 
     padding: 40px; /* Adiciona padding em todos os lados?*/
+    box-shadow: 0px 0px 10px white; /* Adiciona sombra */
+
+    border-radius: 10px;
 }
 
 section {
@@ -56,6 +64,13 @@ img {
     margin: 10px 20px 0px 20px; /* Adiciona margem em todos os lados. A ordem de definição de margem é TOPO, DIREITA, BAIXO, ESQUERDA */
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgb(58, 56, 56);
+}
+
+.comum-div {
+    display: flex; /* Usa layout flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
 }
 
 .img-title {

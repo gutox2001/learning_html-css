@@ -1,6 +1,10 @@
 ul {
-	margin: 20px 0; /* Adiciona margem no topo e na parte inferior */
+	max-width: 800px;
+
+	margin: 10px 0; /* Adiciona margem no topo e na parte inferior */
 	text-align: start;
 	padding-left: 40px; /* Adiciona padding à esquerda */
 	list-style-type: disc; /* Define o estilo de lista como disco */
+	font: 20px Arial, sans-serif; /* Define a família de fontes e o tamanho da fonte */
+    line-height: 1.5; /* Define o espaço entre linhas */
 }

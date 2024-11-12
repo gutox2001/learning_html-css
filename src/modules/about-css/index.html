@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="../../../styles/footer-style.css" />
 		<link rel="stylesheet" href="../../../styles/table-style.css" />
 		<link rel="stylesheet" href="../../../styles/list-style.css" />
+		<link rel="stylesheet" href="../../../styles/titles.css">
 
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -245,6 +246,42 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
+				<div>
+					<h3>
+						Propriedades padrão do Browser
+					</h3>
+					<p>
+						Os navegadores possuem propriedades padrão que são
+						aplicadas a todos os elementos da página. Essas
+						propriedades podem ser sobrescritas com o uso de
+						estilos personalizados no CSS.
+					</p>
+					<div>
+						<h4>
+							Como retirar o estilo padrão do navegador?
+						</h4>
+						<p>
+							Para remover o estilo padrão do navegador, é
+							recomendado usar um arquivo de reset CSS. Um arquivo
+							de reset CSS é um arquivo que remove todos os estilos
+							padrão do navegador, permitindo que você defina seus
+							próprios estilos sem interferência. Para cada elemento o mais adequado é retirar os estilos que são aplicados por padrão, como:
+							<code>
+								* { margin: 0; padding: 0; box-sizing: border-box; }
+							</code>
+						</p>
+						<h4>
+							Alternativas
+						</h4>
+						<p>
+							Usar métodos para retirar ou padronizar os estilos. Como:
+						</p>
+						<ul>
+							<li>Normalize</li>
+							<li>Reset</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 			<div class="separator"></div>
@@ -543,7 +580,7 @@
 							<tr>
 								<td>Margem</td>
 								<td>
-									Área entre o elemento e seus vizinhos.
+									Área entre o elemento e seus vizinhos. A margem entre dois elementos é definida da seguinte forma: se ambos vizinhos possuem margem, a que tem maior margem é a que será aplicada.
 								</td>
 								<td>
 									<code>margin: 15px;</code>
@@ -619,7 +656,30 @@
 					<p class="caption">Essa imagem corresponde a uma ilustração de como funciona um box-model na prática.</p>
 				</div>
 			</section>
-			<!-- <div class="separator"></div> -->
+			<div class="separator"></div>
+			 <section>
+				<h2>Unidades de Medida</h2>
+				<div class="comum-div">
+					<h3>
+						Pixels (px)
+					</h3>
+					<p>
+						Unidade de medida mais comum no CSS. Um pixel é uma unidade de medida relativa à resolução do dispositivo.
+					</p>
+					<ul>
+						<li>Unidade de referência:
+							É a unidade de referência da Web, pois as telas são desenvolvidas em pixels.
+						</li>
+						<li>Monitores:
+							Um monitor de: 3840 (largura em px) x 2160 (altura em px) = 8.294.400.
+						</li>
+						<li>
+							px em CSS:
+							No CSS o pixel (px) é uma unidade de referência e não representa 1 pixel exato do seu dispositivo (é adaptável em relação à densidade da tela).
+						</li>
+					</ul>
+				</div>
+			 </section>
 		</main>
 		<footer></footer>
 	</body>

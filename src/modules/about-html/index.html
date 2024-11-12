@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="../../../styles/footer-style.css" />
 		<link rel="stylesheet" href="../../../styles/table-style.css" />
 		<link rel="stylesheet" href="../../../styles/list-style.css" />
+		<link rel="stylesheet" href="../../../styles/titles.css">
 
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -63,7 +64,8 @@
 					/>
 				</p>
 			</div>
-			<div>
+			<div class="separator"></div>
+			<section>
 				<h2>Principais Tags HTML</h2>
 				<div class="table-container">
 					<table>
@@ -260,8 +262,9 @@
 						</tbody>
 					</table>
 				</div>
-			</div>
-			<div>
+			</section>
+			<div class="separator"></div>
+			<section>
 				<h2>
 					Principais atributos HTML
 				</h2>
@@ -344,7 +347,59 @@
 						Os IDs são únicos e não podem ser repetidos em tags diferentes, mesmo isso não acarretando em um erro exposto. Já as classes podem ser reutilizadas em vários elementos, portanto são muito mais utilizadas.
 					</p>
 				</div>
-			</div>
+			</section>
+			<div class="separator"></div>
+			<section>
+				<h2>
+					Div
+				</h2>
+				<p>
+					A &lt;div&gt; é um elemento de bloco block genérico que serve para auxiliar no posicionamento dos elementos/conteúdo na tela.
+
+					Existem também elementos semânticos como main, section, nav e outros que veremos em outras aulas.
+						
+					</p>
+					<code>
+						&lt;div&gt;
+						<br />
+						&nbsp;&nbsp;&lt;p&gt;Texto 1&lt;/p&gt;
+						<br />
+						&nbsp;&nbsp;&lt;p&gt;Texto 2&lt;/p&gt;
+						<br />
+						&lt;/div&gt;						
+					</code>
+			</section>
+			<section>
+				<h2>
+					Fluxo de Layout
+				</h2>
+				<p>
+					O fluxo do layout no HTML ocorre conforme o modo de escrita definido. Por padrão, de cima para baixo da esquerda para a direita.
+					Para alterar o fluxo do layout, é necessário utilizar o CSS.
+				</p>
+				<div>
+					<h3>
+						Display inline, block e none
+					</h3>
+					<ul>
+						<li>
+							<strong>Inline:</strong> Elementos inline não quebram a linha e são exibidos um ao lado do outro.
+						</li>
+						<li>
+							<strong>Block:</strong> Elementos block quebram a linha e ocupam toda a largura disponível.
+						</li>
+						<li>
+							<strong>Inline-block:</strong> Elementos inline-block são exibidos um ao lado do outro, mas podem ter largura e altura definidas.
+						</li>
+						<li>
+							<strong>None:</strong> Elementos com display none não são exibidos na tela.
+						</li>
+					</ul>
+					<p>
+						Para posicionamento complexos, são utilizados o Flexbox e o Grid Layout.
+					</p>
+				</div>
+			</section>
 		</main>
 		<footer></footer>
 	</body>
