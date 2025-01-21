@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="../../../styles/footer-style.css" />
 		<link rel="stylesheet" href="../../../styles/table-style.css" />
 		<link rel="stylesheet" href="../../../styles/list-style.css" />
-		<link rel="stylesheet" href="../../../styles/titles.css">
+		<link rel="stylesheet" href="../../../styles/titles.css" />
 
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -214,7 +214,8 @@
 									<br />
 									<code>display: inline;</code>
 									<br />
-									<code>display: flex;</code>
+									<code>
+										: flex;</code>
 								</td>
 							</tr>
 							<tr>
@@ -248,34 +249,32 @@
 					</table>
 				</div>
 				<div>
-					<h3>
-						Propriedades padrão do Browser
-					</h3>
+					<h3>Propriedades padrão do Browser</h3>
 					<p>
 						Os navegadores possuem propriedades padrão que são
 						aplicadas a todos os elementos da página. Essas
-						propriedades podem ser sobrescritas com o uso de
-						estilos personalizados no CSS.
+						propriedades podem ser sobrescritas com o uso de estilos
+						personalizados no CSS.
 					</p>
 					<div>
-						<h4>
-							Como retirar o estilo padrão do navegador?
-						</h4>
+						<h4>Como retirar o estilo padrão do navegador?</h4>
 						<p>
 							Para remover o estilo padrão do navegador, é
 							recomendado usar um arquivo de reset CSS. Um arquivo
-							de reset CSS é um arquivo que remove todos os estilos
-							padrão do navegador, permitindo que você defina seus
-							próprios estilos sem interferência. Para cada elemento o mais adequado é retirar os estilos que são aplicados por padrão, como:
+							de reset CSS é um arquivo que remove todos os
+							estilos padrão do navegador, permitindo que você
+							defina seus próprios estilos sem interferência. Para
+							cada elemento o mais adequado é retirar os estilos
+							que são aplicados por padrão, como:
 							<code>
-								* { margin: 0; padding: 0; box-sizing: border-box; }
+								* { margin: 0; padding: 0; box-sizing:
+								border-box; }
 							</code>
 						</p>
-						<h4>
-							Alternativas
-						</h4>
+						<h4>Alternativas</h4>
 						<p>
-							Usar métodos para retirar ou padronizar os estilos. Como:
+							Usar métodos para retirar ou padronizar os estilos.
+							Como:
 						</p>
 						<ul>
 							<li>Normalize</li>
@@ -518,18 +517,18 @@
 			</section>
 			<div class="separator"></div>
 			<section>
-				<h2>
-					Box Model
-				</h2>
+				<h2>Box Model</h2>
 				<p>
 					O Box Model é um conceito fundamental do CSS que define a
 					estrutura de um elemento na página. Cada elemento é
 					representado por uma caixa retangular que consiste em
-					conteúdo, preenchimento, borda e margem. O conteúdo é a
-					área onde o texto e outros elementos são exibidos. O
+					conteúdo, preenchimento, borda e margem. O conteúdo é a área
+					onde o texto e outros elementos são exibidos. O
 					preenchimento é a área entre o conteúdo e a borda. A borda é
 					a área ao redor do elemento. A margem é a área entre o
-					elemento e seus vizinhos. Na tabela abaixo é possível visualizar os valores que podem ser aplicados a cada parte do Box Model.
+					elemento e seus vizinhos. Na tabela abaixo é possível
+					visualizar os valores que podem ser aplicados a cada parte
+					do Box Model.
 				</p>
 				<div class="table-container">
 					<table>
@@ -555,9 +554,7 @@
 							</tr>
 							<tr>
 								<td>Preenchimento</td>
-								<td>
-									Área entre o conteúdo e a borda.
-								</td>
+								<td>Área entre o conteúdo e a borda.</td>
 								<td>
 									<code>padding: 10px;</code>
 									<br />
@@ -568,9 +565,7 @@
 							</tr>
 							<tr>
 								<td>Borda</td>
-								<td>
-									Área ao redor do elemento.
-								</td>
+								<td>Área ao redor do elemento.</td>
 								<td>
 									<code>border: 1px solid #ccc;</code>
 									<br />
@@ -580,7 +575,11 @@
 							<tr>
 								<td>Margem</td>
 								<td>
-									Área entre o elemento e seus vizinhos. A margem entre dois elementos é definida da seguinte forma: se ambos vizinhos possuem margem, a que tem maior margem é a que será aplicada.
+									Área entre o elemento e seus vizinhos. A
+									margem entre dois elementos é definida da
+									seguinte forma: se ambos vizinhos possuem
+									margem, a que tem maior margem é a que será
+									aplicada.
 								</td>
 								<td>
 									<code>margin: 15px;</code>
@@ -616,9 +615,7 @@
 							</tr>
 							<tr>
 								<td>Visibility</td>
-								<td>
-									Define a visibilidade de um elemento.
-								</td>
+								<td>Define a visibilidade de um elemento.</td>
 								<td>
 									<code>visibility: visible;</code>
 									<br />
@@ -633,7 +630,10 @@
 								<td>
 									<code>clip-path: circle(50%);</code>
 									<br />
-									<code>clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);</code>
+									<code>
+										clip-path: polygon(0 0, 100% 0, 100%
+										100%, 0 100%);
+									</code>
 								</td>
 							</tr>
 							<tr>
@@ -649,37 +649,233 @@
 					</table>
 				</div>
 				<div class="img-div">
-					<h4 class="img-title">
-						Ilustração do Box Model
-					</h4>
-					<img id="" src="/src/assets/images/css_images/box-model.png" alt="Ilustração sobre como funciona o box-model.">
-					<p class="caption">Essa imagem corresponde a uma ilustração de como funciona um box-model na prática.</p>
+					<h4 class="img-title">Ilustração do Box Model</h4>
+					<img
+						id=""
+						src="/src/assets/images/css_images/box-model.png"
+						alt="Ilustração sobre como funciona o box-model."
+					/>
+					<p class="caption">
+						Essa imagem corresponde a uma ilustração de como
+						funciona um box-model na prática.
+					</p>
 				</div>
-			</section>
-			<div class="separator"></div>
-			 <section>
-				<h2>Unidades de Medida</h2>
-				<div class="comum-div">
-					<h3>
-						Pixels (px)
-					</h3>
+				<div>
+					<h3>Margin</h3>
 					<p>
-						Unidade de medida mais comum no CSS. Um pixel é uma unidade de medida relativa à resolução do dispositivo.
+						É possível definir a margem de um elemento de várias
+						maneiras. A margem pode ser definida de forma individual
+						para cada lado do elemento (top, right, bottom, left) ou
+						de uma só vez. Abaixo estão listadas algumas formas de
+						definir a margem de um elemento. É importante ressaltar
+						que a margem entre dois elementos é definida da seguinte
+						forma: se ambos vizinhos possuem margem, a que tem maior
+						margem é a que será aplicada.
 					</p>
 					<ul>
-						<li>Unidade de referência:
-							É a unidade de referência da Web, pois as telas são desenvolvidas em pixels.
-						</li>
-						<li>Monitores:
-							Um monitor de: 3840 (largura em px) x 2160 (altura em px) = 8.294.400.
+						<li>
+							<code>
+								margin: 15px; // Dessa forma são definidos todos
+								os lados das bordas
+							</code>
 						</li>
 						<li>
-							px em CSS:
-							No CSS o pixel (px) é uma unidade de referência e não representa 1 pixel exato do seu dispositivo (é adaptável em relação à densidade da tela).
+							<code>
+								margin: 10px 20px; // Dessa forma são definidos
+								TOP-BOTTOM / RIGHT-LEFT
+							</code>
+						</li>
+						<li>
+							<code>
+								margin: 5px 10px 15px 20px; //Dessa forma são
+								definidos os 4 lados TOP / RIGHT / BOTTOM / LEFT
+							</code>
+						</li>
+					</ul>
+					<p>
+						OBS: Existem também as margens que seguem o formato de
+						escrita. Exemplo:
+						<code>margin-block-start: 10px;</code>
+						e
+						<code>margin-block-end: 0.67em;</code>
+						. Dessa forma quando o modo de escrita muda, a margem
+						segue a orientação. Lembre-se que para mudar o modo de
+						escrita basta usar o atributo
+						<code>writing-mode: vertical-rl;</code>
+						.
+					</p>
+				</div>
+				<div>
+					<h3>Padding</h3>
+					<p>
+						Funciona de forma similar a margin, pode ser definido de
+						várias maneiras. A diferença é que o padding é o espaço
+						interno ao redor do conteúdo de um elemento, afetando a
+						distância entre o conteúdo e as bordas do elemento.
+						Abaixo estão listadas algumas formas de definir o
+						padding de um elemento.
+					</p>
+					<ul>
+						<li>
+							<code>
+								padding: 10px; // Dessa forma são definidos
+								todos os lados das bordas
+							</code>
+						</li>
+						<li>
+							<code>
+								padding: 10px 20px; // Dessa forma são definidos
+								TOP-BOTTOM / RIGHT-LEFT
+							</code>
+						</li>
+						<li>
+							<code>
+								padding: 5px 10px 15px 20px; //Dessa forma são
+								definidos os 4 lados TOP / RIGHT / BOTTOM / LEFT
+							</code>
 						</li>
 					</ul>
 				</div>
-			 </section>
+				<div>
+					<h3>Border</h3>
+					<p>
+						Já a borda é a área ao redor do elemento. Ela é definida
+						de uma forma um pouco diferente quando comparada ao
+						padding e a margin. A borda pode ser definida de várias
+						maneiras. Abaixo estão listadas algumas formas de
+						definir a borda de um elemento.
+					</p>
+					<ul>
+						<li>
+							<code>
+								border: 1px solid #ccc; // Dessa forma são
+								definidos todos os lados das bordas
+							</code>
+						</li>
+						<li>
+							<code>
+								border-radius: 8px; // Dessa forma são definidos
+								os 4 lados TOP / RIGHT / BOTTOM / LEFT
+							</code>
+						</li>
+						<li>
+							<code>
+								border-width: 30px 60px; // Dessa forma é
+								possível definir o tamanho das bordas de forma
+								similar ao informado anteriormente (TOP-BOTTOM /
+								RIGHT-LEFT).
+							</code>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="separator"></div>
+			<section>
+				<h2>Unidades de Medida</h2>
+				<div class="comum-div">
+					<h3>Pixels (px)</h3>
+					<p>
+						Unidade de medida mais comum no CSS. Um pixel é uma
+						unidade de medida relativa à resolução do dispositivo.
+					</p>
+					<ul>
+						<li>
+							Unidade de referência: É a unidade de referência da
+							Web, pois as telas são desenvolvidas em pixels.
+						</li>
+						<li>
+							Monitores: Um monitor de: 3840 (largura em px) x
+							2160 (altura em px) = 8.294.400.
+						</li>
+						<li>
+							px em CSS: No CSS o pixel (px) é uma unidade de
+							referência e não representa 1 pixel exato do seu
+							dispositivo (é adaptável em relação à densidade da
+							tela).
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="separator"></div>
+			<section>
+				<h2>Grid</h2>
+				<div class="comum-div">
+					<p>
+						O CSS Grid Layout é um sistema de layout bidimensional
+						que permite criar layouts complexos e responsivos sem a
+						necessidade de frameworks ou bibliotecas adicionais. O
+						Grid Layout divide a página em linhas e colunas,
+						permitindo posicionar os elementos em qualquer célula da
+						grade. Algumas propriedades do CSS Grid Layout:
+					</p>
+					<ul class="">
+						<li>
+							<code>display: grid;</code>
+							Define um contêiner como um grid, permitindo o uso
+							de todas as propriedades de layout de grid.
+							<code>display: grid;</code>
+						</li>
+						<li>
+							<code>grid-template-columns;</code>
+							Define o número e o tamanho das colunas em um grid.
+							<code>grid-template-columns: 1fr 2fr;</code>
+						</li>
+						<li>
+							<code>grid-template-rows;</code>
+							Define o número e o tamanho das linhas em um grid.
+							<code>grid-template-rows: 100px 200px;</code>
+						</li>
+						<li>
+							<code>grid-column;</code>
+							Especifica em qual coluna um item do grid deve
+							começar e terminar.
+							<code>grid-column: 1 / 3;</code>
+						</li>
+						<li>
+							<code>grid-row;</code>
+							Especifica em qual linha um item do grid deve
+							começar e terminar.
+							<code>grid-row: 2 / 4;</code>
+						</li>
+						<li>
+							<code>grid-gap;</code>
+							Define o espaço (gap) entre as colunas e linhas do
+							grid.
+							<code>grid-gap: 10px;</code>
+						</li>
+						<li>
+							<code>justify-items;</code>
+							Alinha os itens do grid ao longo do eixo horizontal
+							dentro de suas células.
+							<code>justify-items: center;</code>
+						</li>
+						<li>
+							<code>align-items;</code>
+							Alinha os itens do grid ao longo do eixo vertical
+							dentro de suas células.
+							<code>align-items: center;</code>
+						</li>
+						<li>
+							<code>justify-content;</code>
+							Alinha o grid inteiro ao longo do eixo horizontal
+							dentro do contêiner.
+							<code>justify-content: space-between;</code>
+						</li>
+						<li>
+							<code>align-content;</code>
+							Alinha o grid inteiro ao longo do eixo vertical
+							dentro do contêiner.
+							<code>align-content: space-around;</code>
+						</li>
+						<li>
+							<code>grid-template-areas;</code>
+							Define áreas nomeadas dentro do grid, facilitando o
+							posicionamento dos itens.
+							<code>grid-template-areas: "header header" "main sidebar" "footer footer";</code>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</main>
 		<footer></footer>
 	</body>

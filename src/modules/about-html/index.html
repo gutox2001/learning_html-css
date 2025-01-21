@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="../../../styles/footer-style.css" />
 		<link rel="stylesheet" href="../../../styles/table-style.css" />
 		<link rel="stylesheet" href="../../../styles/list-style.css" />
-		<link rel="stylesheet" href="../../../styles/titles.css">
+		<link rel="stylesheet" href="../../../styles/titles.css" />
 
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -81,7 +81,11 @@
 								<td><code>&lt;a&gt;</code></td>
 								<td>
 									Define um hyperlink que pode ser usado para
-									navegar para outra página ou recurso.
+									navegar para outra página ou recurso. É uma
+									tag display inline, portanto para que ele
+									respeite espaçamentos, é necessário
+									adicionar um display block no CSS (display:
+									inline-block).
 								</td>
 								<td>
 									<code>
@@ -265,9 +269,7 @@
 			</section>
 			<div class="separator"></div>
 			<section>
-				<h2>
-					Principais atributos HTML
-				</h2>
+				<h2>Principais atributos HTML</h2>
 
 				<div class="table-container">
 					<table>
@@ -315,7 +317,9 @@
 									Define o URL de destino para um hyperlink.
 								</td>
 								<td>
-									<code>&lt;a href="https://www.exemplo.com"&gt;</code>
+									<code>
+										&lt;a href="https://www.exemplo.com"&gt;
+									</code>
 								</td>
 							</tr>
 							<tr>
@@ -335,71 +339,240 @@
 									ou recurso.
 								</td>
 								<td>
-									<code>&lt;img alt="Descrição da Imagem"&gt;</code>
+									<code>
+										&lt;img alt="Descrição da Imagem"&gt;
+									</code>
 								</td>
 							</tr>
 						</tbody>
 					</table>
-					<h3 id="obs_h3">
-						Observação:
-					</h3>
+					<h3 id="obs_h3">Observação:</h3>
 					<p id="obs_p">
-						Os IDs são únicos e não podem ser repetidos em tags diferentes, mesmo isso não acarretando em um erro exposto. Já as classes podem ser reutilizadas em vários elementos, portanto são muito mais utilizadas.
+						Os IDs são únicos e não podem ser repetidos em tags
+						diferentes, mesmo isso não acarretando em um erro
+						exposto. Já as classes podem ser reutilizadas em vários
+						elementos, portanto são muito mais utilizadas.
 					</p>
 				</div>
 			</section>
 			<div class="separator"></div>
 			<section>
-				<h2>
-					Div
-				</h2>
+				<h2>Div</h2>
 				<p>
-					A &lt;div&gt; é um elemento de bloco block genérico que serve para auxiliar no posicionamento dos elementos/conteúdo na tela.
-
-					Existem também elementos semânticos como main, section, nav e outros que veremos em outras aulas.
-						
-					</p>
-					<code>
-						&lt;div&gt;
-						<br />
-						&nbsp;&nbsp;&lt;p&gt;Texto 1&lt;/p&gt;
-						<br />
-						&nbsp;&nbsp;&lt;p&gt;Texto 2&lt;/p&gt;
-						<br />
-						&lt;/div&gt;						
-					</code>
+					A &lt;div&gt; é um elemento de bloco block genérico que
+					serve para auxiliar no posicionamento dos elementos/conteúdo
+					na tela. Existem também elementos semânticos como main,
+					section, nav e outros que veremos em outras aulas.
+				</p>
+				<code>
+					&lt;div&gt;
+					<br />
+					&nbsp;&nbsp;&lt;p&gt;Texto 1&lt;/p&gt;
+					<br />
+					&nbsp;&nbsp;&lt;p&gt;Texto 2&lt;/p&gt;
+					<br />
+					&lt;/div&gt;
+				</code>
 			</section>
 			<section>
-				<h2>
-					Fluxo de Layout
-				</h2>
+				<h2>Fluxo de Layout</h2>
 				<p>
-					O fluxo do layout no HTML ocorre conforme o modo de escrita definido. Por padrão, de cima para baixo da esquerda para a direita.
-					Para alterar o fluxo do layout, é necessário utilizar o CSS.
+					O fluxo do layout no HTML ocorre conforme o modo de escrita
+					definido. Por padrão, de cima para baixo da esquerda para a
+					direita. Para alterar o fluxo do layout, é necessário
+					utilizar o CSS.
 				</p>
 				<div>
-					<h3>
-						Display inline, block e none
-					</h3>
+					<h3>Display inline, block e none</h3>
 					<ul>
 						<li>
-							<strong>Inline:</strong> Elementos inline não quebram a linha e são exibidos um ao lado do outro.
+							<strong>Inline:</strong>
+							Elementos inline não quebram a linha e são exibidos
+							um ao lado do outro.
 						</li>
 						<li>
-							<strong>Block:</strong> Elementos block quebram a linha e ocupam toda a largura disponível.
+							<strong>Block:</strong>
+							Elementos block quebram a linha e ocupam toda a
+							largura disponível.
 						</li>
 						<li>
-							<strong>Inline-block:</strong> Elementos inline-block são exibidos um ao lado do outro, mas podem ter largura e altura definidas.
+							<strong>Inline-block:</strong>
+							Elementos inline-block são exibidos um ao lado do
+							outro, mas podem ter largura e altura definidas.
 						</li>
 						<li>
-							<strong>None:</strong> Elementos com display none não são exibidos na tela.
+							<strong>None:</strong>
+							Elementos com display none não são exibidos na tela.
 						</li>
 					</ul>
 					<p>
-						Para posicionamento complexos, são utilizados o Flexbox e o Grid Layout.
+						Para posicionamento complexos, são utilizados o Flexbox
+						e o Grid Layout.
 					</p>
 				</div>
 			</section>
+			<div class="separator"></div>
+			<section>
+				<h2>Imagens</h2>
+				<p>
+					Para inserir imagens em uma página HTML, utilizamos a tag
+					&lt;img&gt;. Esta tag possui dois atributos obrigatórios:
+					src e alt. Além desses, podemos adicionar outros atributos
+					como width e height para definir o tamanho da imagem, e
+					title para adicionar um texto de dica.
+				</p>
+				<div>
+					<code>
+						&lt;img src="caminho-da-imagem.jpg" alt="Descrição da
+						Imagem" width="200" height="200" title="Imagem de
+						Exemplo"&gt;
+					</code>
+					<h3>Observações:</h3>
+					<ul>
+						<li>
+							Na estilização da imagem usamos na maioria das vezes
+							o display block para que a imagem respeite os
+							espaçamentos.
+						</li>
+						<li>
+							O ideal é sempre utilizar uma imagem com o dobro da
+							resolução para o tamanho que deseja utilizá-la, para
+							que a imagem não fique distorcida. Se o tamanho for
+							de 200x200, o ideal é utilizar uma imagem de
+							400x400px de resolução.
+						</li>
+						<li>
+							Normalmente utiliza-se o max-width: 100% e o
+							max-height: 100% para que a imagem se ajuste ao
+							tamanho do container, sem ultrapassar seu tamanho
+							total. Se utilizar somente o width, por exemplo, ela
+							se ajustará ao tamanho da largura da tag pai.
+						</li>
+						<li>
+							O atributo title é utilizado para adicionar um texto
+							de dica que aparece quando o usuário passa o mouse
+							sobre a imagem.
+						</li>
+						<li>
+							O atributo alt é importante para acessibilidade,
+							pois descreve a imagem para pessoas com deficiência
+							visual.
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Tipos de imagem</h3>
+					<p>
+						Existem 4 tipos de imagens mais comuns utilizadas na
+						web: JPG, PNG, SVG e GIF. Em geral serão utilizados o
+						PNG e o SVG
+					</p>
+					<div>
+						<h4>
+							Sites interessantes
+						</h4>
+						<ul>
+							<li>
+								<p>
+									Onde obter imagens gratuitas:
+									<a href="https://unsplash.com/pt-br">Unsplash</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									Onde redimensionar e otimizar imagens:
+									<a href="https://squoosh.app/">Squoosh</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<div>
+							<h4>PNG</h4>
+							<p>
+								PNG (Portable Network Graphics) é um formato de
+								imagem raster que utiliza compressão sem perda
+								de qualidade. Isso significa que a qualidade da
+								imagem não é comprometida ao ser compactada.
+							</p>
+
+							<strong>Pontos Positivos:</strong>
+							<ul>
+								<li>
+									Suporta transparência, permitindo que partes
+									da imagem sejam transparentes.
+								</li>
+								<li>
+									Compressão sem perda de qualidade, mantendo
+									a integridade da imagem.
+								</li>
+								<li>
+									Ideal para gráficos com áreas de cores
+									sólidas, como logotipos e ícones.
+								</li>
+							</ul>
+
+							<strong>Pontos Negativos:</strong>
+							<ul>
+								<li>
+									Arquivos PNG tendem a ser maiores em tamanho
+									comparados a JPEG, especialmente para fotos.
+								</li>
+								<li>
+									Não é adequado para imagens fotográficas de
+									alta resolução devido ao tamanho do arquivo.
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h4>SVG</h4>
+							<p>
+								Opção mais utilizada. É um formato de imagem
+								baseado em XML que é utilizado para descrever
+								gráficos vetoriais bidimensionais. Diferente de
+								formatos de imagem rasterizados como JPEG ou
+								PNG, que são compostos por pixels, os gráficos
+								vetoriais são definidos por formas geométricas
+								como linhas, círculos e polígonos, o que permite
+								que sejam escalados para qualquer tamanho sem
+								perda de qualidade.
+							</p>
+							<strong>Pontos positivos:</strong>
+							<ul>
+								<li>
+									Escalabilidade infinita sem perda de
+									qualidade, ideal para logotipos e ícones.
+								</li>
+								<li>
+									Arquivos geralmente menores em tamanho
+									comparados a PNG e JPEG.
+								</li>
+								<li>
+									Permite animações e interatividade através
+									de CSS e JavaScript.
+								</li>
+								<li>
+									Compatível com a maioria dos navegadores
+									modernos.
+								</li>
+							</ul>
+
+							<strong>Pontos Negativos:</strong>
+							<ul>
+								<li>
+									Não é adequado para imagens fotográficas
+									complexas.
+								</li>
+								<li>
+									Requer conhecimento de XML para edição
+									manual.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <div class="separator"></div> -->
 		</main>
 		<footer></footer>
 	</body>
