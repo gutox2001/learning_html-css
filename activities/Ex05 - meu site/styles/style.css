@@ -1,0 +1,47 @@
+html {
+    font-family: 'Montserrat', Georgia, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #202020;
+}
+
+body {
+    max-width: 100vw;
+	min-height: 100vh;
+    
+    margin: 0.2rem;
+    padding: 0rem;
+    
+    background-color: #f8f9fa;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+
+    color: #19180a;
+}
+
+h2 {
+    font-size: 1.75rem;
+
+    color: #3f220f;
+}
+
+h3 {
+    font-size: 1.5rem;
+
+    color: #ff6d00;
+}
+
+h4 {
+    font-size: 1.25rem;
+
+    color: #5AED83;
+}
+
+h5 {
+    font-size: 1rem;
+
+    color: #13262f;
+}
