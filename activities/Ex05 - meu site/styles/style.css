@@ -6,17 +6,15 @@ html {
 }
 
 body {
-    max-width: 100vw;
-	min-height: 100vh;
+    background-color: #fefae0;
     
-    margin: 0.2rem;
+    margin: 0rem;
     padding: 0rem;
-    
-    background-color: #f8f9fa;
 }
 
 h1 {
     font-size: 2.5rem;
+    font-weight: 700;
     margin: 0 0 1rem;
 
     color: #19180a;
@@ -24,24 +22,47 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
+    font-weight: 600;
 
     color: #3f220f;
 }
 
 h3 {
     font-size: 1.5rem;
+    font-weight: 600;
 
-    color: #ff6d00;
+    color: #3f220f;
 }
 
 h4 {
     font-size: 1.25rem;
+    font-weight: 600;
 
-    color: #5AED83;
+    color: #3f220f;
 }
 
 h5 {
     font-size: 1rem;
 
-    color: #13262f;
+    color: #5AED83;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 0rem;
+    margin: 0rem;
+}
+
+div {
+    padding: 0.5rem;
+}
+
+
+p {
+	font-size: 1.1rem;
 }

@@ -1,43 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pitman</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pitman</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Seja bem-vindo ao meu site</h1>
-            <p>Este é o meu primeiro site, espero que goste!</p>
-        </section>
-        <section>
-            <h2>Quem sou eu?</h2>
-            <p>Meu nome é Pitman, sou um desenvolvedor web e este é o meu primeiro site.</p>
-        </section>
-        <section>
-            <h2>Por que criar um site?</h2>
-            <p>Eu criei este site para mostrar um pouco do meu trabalho e das minhas habilidades.</p>
-        </section>
-        <section>
-            <h2>Contato</h2>
-            <p>Se quiser entrar em contato comigo, envie um e-mail para:
-    </main>
-    <footer></footer>
-</body>
+		<link
+			rel="shortcut icon"
+			href="./imgs/Ícone Pitman Branco.png"
+			type="image/x-icon"
+		/>
+
+		<link rel="stylesheet" href="./styles/style.css" />
+
+		<link rel="stylesheet" href="./styles/header.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+		<link rel="stylesheet" href="./styles/main.css" />
+	</head>
+	<body>
+		<header>
+			<!-- <h1>Pitman</h1> -->
+			<div>
+				<img
+					class="pitman-title"
+					src="./imgs/Pitman Title Verde.png"
+					alt="Pitman Title"
+				/>
+			</div>
+			<div class="div-pitman-icon">
+				<img
+					class="pitman-icon"
+					src="./imgs/Ícone Pitman Branco.png"
+					alt="Pitman Logo"
+				/>
+			</div>
+			<div id="nav-container">
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Sobre nós</a>
+						</li>
+						<li>
+							<a href="#">Contato</a>
+						</li>
+						<li>
+							<a href="#">Meu perfil</a>
+							<!-- Esse potão deve aparecer com o nome login -->
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="presentation-section">
+				<img
+					class="main-illustration"
+					src="./imgs/Main ilustration.png"
+					alt="Imagem ilustrativa"
+				/>
+				<div>
+					<h1>
+						Equipe especializada em desenvolvimento de softwares
+						personalizados
+					</h1>
+					<p>
+						Sua aplicação ou site feito sob medida para atender as
+						necessidades do seu negócio. Uma equipe especializada e
+						qualificada, aliada a tecnologias de ponta, garantem a
+						qualidade e eficiência do seu projeto.
+					</p>
+				</div>
+			</section>
+			<article id="quality-article">
+				<div class="initial-div">
+					<h2>Qualidade e eficiẽncia</h2>
+					<p>
+						Nossa equipe é extremamente capacitada e qualificada,
+						além disso usamos tecnologias e ferramentas de ponta
+						para garantir a qualidade e eficiência do seu projeto.
+						Adotamos uma comunicação fluida e transparente com
+						nossos clientes, para que você possa acompanhar o
+						desenvolvimento do seu projeto.
+					</p>
+				</div>
+				<div id="quality-conntainer">
+					<div class="simple-card">
+						<img src="" alt="Icones" />
+						<h4>Produtividade</h4>
+						<p>
+							Utilizamos as melhores práticas de desenvolvimento
+							de software para garantir a qualidade do seu
+							projeto.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article id="clients-article">
+				<div>
+					<h2>Alguns clientes</h2>
+					<p>Citar aluns clientes (carrossel ou algo do tipo?)</p>
+					<ol>
+						<li>
+							<h3>2024</h3>
+							<div>
+								<h4>ALB</h4>
+								<p>SIte</p>
+							</div>
+						</li>
+						<li></li>
+					</ol>
+				</div>
+			</article>
+			<article id="about-article">
+				<div class="initial-div">
+					<h2>Quem somos?</h2>
+					<p>
+						A Pitman nasceu da minha visão empreendedora e paixão
+						por inovação. Meu nome é Aroldo, curso Ciências da
+						Computação e sempre fui motivado por desafios que unem
+						criatividade, tecnologia e eficiência. Com uma abordagem
+						focada em qualidade e soluções inteligentes, criei a
+						Pitman para oferecer produtos e serviços que fazem a
+						diferença. Minha experiência e dedicação garantem que
+						cada detalhe seja pensado para proporcionar a melhor
+						experiência aos nossos clientes. 🚀
+					</p>
+				</div>
+				<div id="about-container">
+					<img src="./imgs/Aroldo.jpg" alt="Icones" />
+					<p>Aroldo Augusto Barbosa - Sócio fundador</p>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<div class="main-footer-content">
+				<img
+					class="pitman-logo"
+					src="./imgs/pitman_logo_transparent_512x512.svg"
+					alt="Pitman Logo"
+				/>
+				<div class="footer-contact">
+					<h4>Contato</h4>
+					<p>teste</p>
+				</div>
+				<div class="footer-social">
+					<h4>Redes sociais</h4>
+					<ul>
+						<li>
+							<a href="#">Facebook</a>
+						</li>
+						<li>
+							<a href="#">Instagram</a>
+						</li>
+						<li>
+							<a href="#">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p>&copy; 2025 - Pitman. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+	</body>
 </html>
